@@ -1879,7 +1879,7 @@ namespace WindowsFormsApp1
             WriteDataToExcel(axis1PosList, axis1VelList, axis1TorqueList, axis2PosList, axis2VelList, axis2TorqueList);
 
             GTN.mc.GT_GetSts(1, out Sts1, 1, out clock);
-            GTN.mc.GT_GetSts(2, out Sts1, 1, out clock);
+            GTN.mc.GT_GetSts(2, out Sts2, 1, out clock);
 
             if (((Sts1 & 0x400) == 0) && ((Sts2 & 0x400) == 0))
             {
